@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Document</title>
+</head>
+
+<body>
+    <!-- Ordered List with Roman Numerals -->
+    <h1>Ordered List</h1>
+    <ol type="I">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ol>
+
+    <!-- External Image -->
+    <h1>Image from Pexels</h1>
+    <img src="https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg" alt="Beautiful Scene" width="400">
+
+    <!-- Table of Contacts -->
+    <h1>Contact List</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>username</td>
+                <td>Tomboya Street, Town</td>
+                <td>070-456-7890</td>
+                <td>johndoe@example.com</td>
+            </tr>
+            <tr>
+                <td>username</td>
+                <td>ndege road, City</td>
+                <td>074-567-8901</td>
+                <td>johndoe@example.com</td>
+            </tr>
+            <tr>
+                <td>username</td>
+                <td>Nairobi, City</td>
+                <td>075-678-9012</td>
+                <td>johndoe@example.com</td>
+            </tr>
+            <tr>
+                <td>username</td>
+                <td>kisumu, City</td>
+                <td>076-789-0123</td>
+                <td>johndoe@example.com</td>
+            </tr>
+            <tr>
+                <td>username</td>
+                <td>Nakuru, City</td>
+                <td>077-890-1234</td>
+                <td>johndoe@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h1>Registration Form</h1>
+    <form action="/submit" method="POST">
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+        <br><br>
+
+        <!-- Date Field -->
+        <label for="date">Date of Birth:</label>
+        <input type="date" id="date" name="date" required>
+        <br><br>
+
+        <!-- Dropdown -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <label>Subscription Plan:</label>
+        <input type="radio" id="basic" name="plan" value="basic" required>
+        <label for="basic">Basic</label>
+        <input type="radio" id="premium" name="plan" value="premium">
+        <label for="premium">Premium</label>
+        <br><br>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label>
+        <input type="checkbox" id="tech" name="interests" value="tech">
+        <label for="tech">Tech</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+</body>
+
+</html>
